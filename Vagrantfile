@@ -11,7 +11,7 @@ boxes = [
   Vagrant.configure("2") do |config|
     boxes.each do |opts|
       config.vm.define opts[:name] do |config|
-        config.vm.box = "debian7"
+        config.vm.box = "ubuntu-16.04"
         config.vm.box_check_update = false
         config.vm.boot_timeout = 360
         config.ssh.username = 'vagrant'
